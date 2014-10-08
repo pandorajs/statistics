@@ -55,7 +55,7 @@ define(function(require, exports, module) {
             }
 
             if (messageBus) {
-                messageBus.on('statistics', function(event, modules) {
+                messageBus.on('useModule', function(event, modules) {
                     self.statistics(modules);
                 });
             }
